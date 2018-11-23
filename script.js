@@ -57,7 +57,12 @@ function esc() {
 }
 
 function fit() {
-  $("#singly").fitText(0.05 * $("#singly").text().length + 0.2)
+  var l = $("#singly").text().length
+  var f = 0.05 * l + 0.2
+  if (l > 120) {
+    f *= 1/l*75
+  }
+  $("#singly").fitText(f)
 }
 
 function gi(id) {
