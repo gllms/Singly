@@ -1,0 +1,22 @@
+#sentence, #controls {
+	display: none;
+}
+
+#singly {
+  display: inline-block !important;
+  width: 100% !important;
+  text-align: center;
+}
+
+label {
+  color: #2196f3;;
+}
+
+.materialize-textarea:focus {
+  border-bottom: 1px solid #2196f3 !important;
+  box-shadow: 0 1px 0 0 #2196f3 !important;
+}
+
+.materialize-textarea:focus+label {
+  color: #2196f3 !important;
+}
